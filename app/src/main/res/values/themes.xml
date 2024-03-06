@@ -13,4 +13,114 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="DefaultTextStyle">
+
+        <item name="android:textColor">@color/baseColor</item>
+
+        <item name="android:textSize">18.5sp</item>
+
+        <item name="android:fontFamily">@font/opensans_regular</item>
+
+    </style>
+
+    <style name="DefaultWhiteTextStyle">
+
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:textSize">18.5sp</item>
+
+        <item name="android:fontFamily">@font/opensans_regular</item>
+
+    </style>
+
+    <style name="DefaultStrokeWhiteTextStyle">
+
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:textSize">18.5sp</item>
+
+        <item name="android:fontFamily">@font/opensans_bold</item>
+
+    </style>
+
+    <style name="DefaultGreenTextStyle">
+
+        <item name="android:textColor">@color/green</item>
+
+        <item name="android:textSize">18.5sp</item>
+
+        <item name="android:fontFamily">@font/opensans_regular</item>
+
+    </style>
+
+    <style name="DefaultStrokeGreenTextStyle">
+
+        <item name="android:textColor">@color/green</item>
+
+        <item name="android:textSize">18.5sp</item>
+
+        <item name="android:fontFamily">@font/opensans_bold</item>
+
+    </style>
+
+    <style name="TitleWhiteTextStyle">
+
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:textSize">26sp</item>
+
+        <item name="android:fontFamily">@font/opensans_regular</item>
+
+    </style>
+
+    <style name="TitleGreenTextStyle">
+
+        <item name="android:textColor">@color/green</item>
+
+        <item name="android:textSize">26sp</item>
+
+        <item name="android:fontFamily">@font/opensans_regular</item>
+
+    </style>
+
+    <style name="TitleStrokeTextStyle">
+
+        <item name="android:textColor">@color/baseColor</item>
+
+        <item name="android:textSize">26sp</item>
+
+        <item name="android:fontFamily">@font/opensans_bold</item>
+
+    </style>
+
+    <style name="TitleStrokeGreenTextStyle">
+
+        <item name="android:textColor">@color/green</item>
+
+        <item name="android:textSize">26sp</item>
+
+        <item name="android:fontFamily">@font/opensans_bold</item>
+
+    </style>
+
+    <style name="DetailTextStyle">
+
+        <item name="android:textColor">@color/baseColor</item>
+
+        <item name="android:textSize">13sp</item>
+
+        <item name="android:fontFamily">@font/opensans_regular</item>
+
+    </style>
+
+    <style name="DetailGreenTextStyle">
+
+        <item name="android:textColor">@color/green</item>
+
+        <item name="android:textSize">13sp</item>
+
+        <item name="android:fontFamily">@font/opensans_regular</item>
+
+    </style>
 </resources>

@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'fr.reitag.park_share_front_android'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "fr.reitag.park_share_front_android"
         minSdk 26
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
