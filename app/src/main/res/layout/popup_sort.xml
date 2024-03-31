@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/popup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/TitleStrokeTextStyle"
+        android:text="Trier par"/>
+
+    <View
+        android:id="@+id/underlineSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/grey" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_button_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/DefaultGreenTextStyle"
+            android:text="Distance"/>
+
+        <RadioButton
+            android:id="@+id/radio_button_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/DefaultTextStyle"
+            android:text="Prix" />
+
+        <RadioButton
+            android:id="@+id/radio_button_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/DefaultTextStyle"
+            android:text="Note"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

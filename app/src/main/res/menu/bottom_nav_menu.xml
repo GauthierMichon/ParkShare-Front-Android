@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/browser"
+        android:title="Parcourir"
+        android:icon="@drawable/ic_bag_green"
+        />
+
+    <item
+        android:id="@+id/me"
+        android:title="Moi"
+        android:icon="@drawable/ic_person_green"
+        />
+</menu>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/signInSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:background="@drawable/button_empty"
+                app:backgroundTint="@color/beige"
+                style="@style/TitleStrokeTextStyle"
+                android:text="Sign in" />
+
+            <View
+                android:id="@+id/underlineSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/signUpSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:background="@drawable/button_empty"
+                app:backgroundTint="@color/beige"
+                style="@style/TitleStrokeTextStyle"
+                android:text="Sign up" />
+
+            <View
+                android:id="@+id/underlineSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/green"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imagePerson"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/ic_person"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <EditText
+        android:id="@+id/editTextEmailLogIn"
+        style="@style/InputGreyTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:background="@drawable/edittext_rounded"
+        android:inputType="textEmailAddress"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="hugobast33@gmail.com"
+        app:layout_constraintTop_toBottomOf="@+id/imagePerson" />
+
+    <EditText
+        android:id="@+id/editTextPasswordLogIn"
+        style="@style/InputGreyTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:background="@drawable/edittext_rounded"
+        android:inputType="textPassword"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="mypassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailLogIn" />
+
+    <android.widget.Button
+        android:id="@+id/buttonLogIn"
+        style="@style/TitleWhiteTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/green"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordLogIn" />
+
+
+
+
+    <EditText
+        android:id="@+id/editTextFirstNameSignUp"
+        style="@style/InputGreyTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="FirstName"
+        android:background="@drawable/edittext_rounded"
+        android:inputType="textEmailAddress"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/imagePerson" />
+
+
+    <EditText
+        android:id="@+id/editTextLastNameSignUp"
+        style="@style/InputGreyTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="LastName"
+        android:background="@drawable/edittext_rounded"
+        android:inputType="textEmailAddress"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstNameSignUp" />
+
+
+    <EditText
+        android:id="@+id/editTextEmailSignUp"
+        style="@style/InputGreyTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:background="@drawable/edittext_rounded"
+        android:inputType="textEmailAddress"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastNameSignUp" />
+
+    <EditText
+        android:id="@+id/editTextPasswordSignUp"
+        style="@style/InputGreyTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:background="@drawable/edittext_rounded"
+        android:inputType="textPassword"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailSignUp" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPasswordSignUp"
+        style="@style/InputGreyTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:background="@drawable/edittext_rounded"
+        android:inputType="textPassword"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordSignUp" />
+
+    <android.widget.Button
+        android:id="@+id/buttonSignUp"
+        style="@style/TitleWhiteTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/green"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPasswordSignUp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
