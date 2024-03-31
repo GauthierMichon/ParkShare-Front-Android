@@ -52,8 +52,6 @@ class ListFragment : Fragment() {
 
         textViewPortions.text = String.format("%d portions", recipe.portion)*/
 
-        val buttonOrder = view.findViewById(R.id.buttonOrder) as Button
-        val iconButtonOrder = view.findViewById(R.id.iconButtonOrder) as ImageButton
 
 
         recyclerViewAd.layoutManager = GridLayoutManager(requireContext(), 2)

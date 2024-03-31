@@ -2,6 +2,7 @@ package fr.reitag.park_share_front_android.ui.home
 
 import android.content.Intent
 import android.graphics.drawable.ColorDrawable
+import android.location.Location
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -38,6 +39,8 @@ class HomeActivity : AppCompatActivity() {
     private val editTextSearch: EditText by lazy { findViewById<EditText>(R.id.editTextSearch) }
     private val bottomNavigationView: BottomNavigationView by lazy { findViewById(R.id.bottomNavigationView) }
     private val buttonFilter: ImageButton by lazy { findViewById(R.id.buttonFilter) }
+    private val buttonOrder: Button by lazy { findViewById(R.id.buttonOrder) }
+    private val iconButtonOrder: ImageButton by lazy { findViewById(R.id.iconButtonOrder) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,7 +59,11 @@ class HomeActivity : AppCompatActivity() {
             }
         }
 
-        buttonFilter.setOnClickListener {
+        buttonOrder.setOnClickListener {
+            afficherPopup()
+        }
+
+        iconButtonOrder.setOnClickListener {
             afficherPopup()
         }
     }
@@ -123,7 +130,18 @@ class HomeActivity : AppCompatActivity() {
 
     private fun updateAdList() {
         when (sortTypeNumber) {
-            1 -> adList.sortBy { it.name }
+            1 -> {
+                val startPoint = Location("locationA")
+                startPoint.latitude = 17.372102
+                startPoint.longitude = 78.484196
+
+                adList.sortBy {
+                    val endPoint = Location("locationB")
+                    endPoint.latitude = it.latitude
+                    endPoint.longitude = it.longitude
+                    startPoint.distanceTo(endPoint).toInt()
+                }
+            }
             2 -> adList.sortBy { it.hourPrice }
             3 -> {
                 val (adsWithFeedback, adsWithoutFeedback) = adList.partition { it.feedbacks.isNotEmpty() }
